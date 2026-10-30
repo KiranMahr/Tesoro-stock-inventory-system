@@ -22,9 +22,9 @@ event handling and React Hooks.
 - Store inventory data locally in the browser.
 
 
-##  Rendering Architecture: CSR vs. SSR
+##  Rendering Architecture: CSR vs SSR
 
-### 1. Client-Side Rendering (CSR)
+### 1. Client Side Rendering (CSR)
 
 Client Side Rendering is commonly used in standard Vite and React
 single page applications. The browser initially receives an HTML
@@ -40,7 +40,7 @@ to become interactive while JavaScript downloads and executes.
 Search engines can index JavaScript rendered content but indexing
 may require additional processing.
 
-### 2. Server-Side Rendering (SSR)
+### 2. Server Side Rendering (SSR)
 
 Server Side Rendering is supported by Next.js frameworks.
 The server generates HTML for a request and sends rendered content
@@ -54,7 +54,7 @@ server side execution, additional deployment complexity and
 potentially higher hosting costs. Performance depends on server
 response times, caching and application design.
 
-### 3. CSR vs. SSR Comparison
+### 3. CSR vs SSR Comparison
 
 | Aspect | CSR | SSR |
 |---|---|---|
@@ -95,8 +95,8 @@ Install Node.js and npm before running the project.
 
 Clone the repository and open its directory:
 
-    git clone YOUR_GITHUB_REPOSITORY_URL
-    cd ecommerce-inventory
+    git clone https://github.com/KiranMahr/Tesoro-stock-inventory-system
+    cd inventory
 
 Install dependencies:
 
