@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f7f3ef;
+  color: #333;
+}
+
+header {
+  background-color: #5b3a29;
+  color: white;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0 0 5px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+.card-wrapper {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+h3 {
+  margin: 0 0 8px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 7px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #704832;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5b3a29;
+}
+
+form > button {
+  display: block;
+  margin: 0 auto;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.product-list .card-wrapper {
+  margin-bottom: 0;
+}
+
+.product-list p {
+  margin: 6px 0;
+}
+
+.inventory-summary {
+  margin-bottom: 20px;
+}
+
+.total-stock {
+  margin-top: 10px;
+}
+
+.inventory-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.inventory-filters label {
+  margin-right: 6px;
+}
+
+.inventory-summary__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.inventory-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.inventory-stat__label {
+  font-weight: 600;
+}
+
+.inventory-stat__value {
+  font-size: 1.5rem;
+}
+
+.stock-status {
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.in-stock {
+  color: #245c32;
+  background: #e5f3e8;
+}
+
+.low-stock {
+  color: #70430b;
+  background: #fff3d8;
+}
+
+.out-of-stock {
+  color: #8a3028;
+  background: #fbe9e7;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .inventory-summary__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form-row label {
+    width: auto;
+    margin-bottom: 4px;
+  }
+}
+
+.card-wrapper li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 360px) {
+  .inventory-summary__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*task 5: set light theme*/
+.app.light {
+  background-color: #fffaf4;
+  color: #38271f;
+  min-height: 100vh;
+}
+
+/*task 5: set dark theme*/
+.app.dark {
+  background-color: #211b19;
+  color: #fff5eb;
+  min-height: 100vh;
+}
+
+.app header h1,
+.app.dark h2 {
+  color: #fff5eb;
+}
+
+.app.dark .card-wrapper,
+.app.dark .inventory-stat {
+  color: #fff5eb;
+  background-color: #382f2a;
+  border-color: #57483f;
+}
+
+.app.dark input,
+.app.dark select {
+  color: #222;
+  background-color: #fff;
+}
+
+/*task 5: style buttons in both themes*/
+.app button {
+  cursor: pointer;
+  padding: 8px 14px;
+}
+
+.theme-toggle {
+  display: block;
+  margin: 0 auto 12px;
+}

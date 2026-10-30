@@ -1,0 +1,42 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f7f3ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-inline: 1px solid #e5e4e7;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: #08060d;
+  font-weight: 500;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
